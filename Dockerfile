@@ -23,6 +23,7 @@ RUN mkdir ${HOME}/.android \
   && echo "count=0" > ${HOME}/.android/repositories.cfg \
   && echo y | ${ANDROID_HOME}/tools/bin/sdkmanager 'tools' \
   && echo y | ${ANDROID_HOME}/tools/bin/sdkmanager 'platform-tools' \
+  && echo y | ${ANDROID_HOME}/tools/bin/sdkmanager 'ndk-bundle' \
   && echo y | ${ANDROID_HOME}/tools/bin/sdkmanager 'build-tools;'${ANDROID_BUILD_TOOLS_VERSION} \
   && echo y | ${ANDROID_HOME}/tools/bin/sdkmanager 'platforms;android-26' \
   && echo y | ${ANDROID_HOME}/tools/bin/sdkmanager 'extras;android;m2repository' \
