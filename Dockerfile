@@ -25,7 +25,7 @@ RUN mkdir ${HOME}/.android \
   && echo y | ${ANDROID_HOME}/tools/bin/sdkmanager 'platform-tools' \
   && echo y | ${ANDROID_HOME}/tools/bin/sdkmanager 'ndk-bundle' \
   && echo y | ${ANDROID_HOME}/tools/bin/sdkmanager 'build-tools;'${ANDROID_BUILD_TOOLS_VERSION} \
-  && echo y | ${ANDROID_HOME}/tools/bin/sdkmanager 'platforms;android-23' \
+  && echo y | ${ANDROID_HOME}/tools/bin/sdkmanager 'platforms;android-27' \
   && echo y | ${ANDROID_HOME}/tools/bin/sdkmanager 'extras;android;m2repository' \
   && echo y | ${ANDROID_HOME}/tools/bin/sdkmanager 'extras;google;m2repository' \
   && echo y | ${ANDROID_HOME}/tools/bin/sdkmanager 'extras;google;google_play_services' \
