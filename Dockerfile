@@ -17,7 +17,7 @@ RUN wget --quiet --output-document=sdk-tools.zip https://dl.google.com/android/r
   && rm -f sdk-tools.zip
 
 # Install the SDK components.
-ENV ANDROID_BUILD_TOOLS_VERSION 27.0.0
+ENV ANDROID_BUILD_TOOLS_VERSION 27.0.3
 
 RUN mkdir ${HOME}/.android \
   && echo "count=0" > ${HOME}/.android/repositories.cfg \
